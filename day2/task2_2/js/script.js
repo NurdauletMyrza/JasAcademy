@@ -10,7 +10,6 @@ body.appendChild(input);
 body.appendChild(label);
 
 input.onchange = (event) => {
-    console
     let text = event.target.value;
     if (text.includes("+") || text.includes("-") || text.includes("*") || text.includes("/")) {
         let numB = 0;
@@ -32,7 +31,6 @@ input.onchange = (event) => {
                 label.innerHTML = "Только одну операцию";
                 break;
             } else if (ch === ' ') {
-                continue;
             } else {
                 isValid = false;
                 label.innerHTML = "Неверное выражение";
@@ -40,7 +38,6 @@ input.onchange = (event) => {
             }
         }
         if (isValid) {
-            let result;
             switch (operation) {
                 case '+':
                     result = numA + numB;
@@ -67,13 +64,3 @@ input.onchange = (event) => {
         label.innerHTML = "";
     }
 };
-function getNumber(str) {
-    let result = 0;
-    for (let i = 0; i < str.length; i++) {
-        let ch = str.charAt(i);
-        if ('0' <= ch && ch <= '9') {
-            result = result * 10 + parseInt(ch);
-        }
-    }
-    return result;
-}
