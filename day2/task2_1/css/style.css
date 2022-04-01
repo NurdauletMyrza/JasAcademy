@@ -1,0 +1,26 @@
+div {
+    margin: 20px;
+}
+label {
+    display: inline-block;
+    width: 20px;
+}
+.btn {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #E8E8E8;
+    width: 22px;
+    height: 22px;
+    margin: 3px 4px;
+}
+p {
+    font-weight: bold;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+    <style>
+        body {
+            background-color: #eee;
+        }
+        .container {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 1px;
+            max-width: 800px
+        }
+        .block {
+            margin: 50px;
+            padding: 30px;
+            background: #FBFBFB;
+            border: 1px solid #74B4FF;
+            border-radius: 4px;
+        }
+        .head {
+            display: flex;
+            align-items: center;
+            margin: 0 -15px;
+        }
+        .head > * {
+            padding: 0 15px;
+            display: inline-block;
+        }
+        .head__img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .head__full-name {
+            font-weight: bold;
+            font-size: 36px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 25%;
+        }
+        .content {
+            height: 200px;
+            border-radius: 10px;
+            border: 1px solid #E8E8E8;
+            padding: 5px 15px;
+            margin: 30px 0;
+            line-height: 30px;
+        }
+        .bottom {
+            margin-top: -20px;
+            color: grey;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <div class="head">
+                <div class="head__item1">
+                    <img class="head__img" src="https://www.kindpng.com/picc/m/49-493062_avatar-transparent-shrek-shrek-png-png-download.png" alt="shrek.png">
+                </div>
+                <div class="head__item2">
+                    <div title="Shreck Ogrbek Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, inventore pariatur repudiandae tenetur totam velit" class="head__full-name">Shrek Ogrbek Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, inventore pariatur repudiandae tenetur totam velit</div>
+                    <div class="head__link"><a href="#">@shrek</a></div>
+                </div>
+            </div>
+            <div class="content">
+                Всем привет, я живу на болоте!<br>Вот мой адрес: <a href="https://2gis.kz/nur_sultan">https://2gis.kz/nur_sultan</a>
+            </div>
+            <div class="bottom">
+                <span><time>11:32 • 2 марта 2022г</time></span>
+                <span>Нравится: 255 • Комментарии: 7 • Репост: 3</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
